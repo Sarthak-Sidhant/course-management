@@ -1,0 +1,29 @@
+{
+    "courses": [
+      {
+        "course_id": 1,
+        "course_name": "Introduction to Programming",
+        "course_state": "California",
+        "course_college": "Stanford University",
+        "course_university": "Stanford University",
+        "course_price": 1000
+      },
+      {
+        "course_id": 2,
+        "course_name": "Data Structures and Algorithms",
+        "course_state": "New York",
+        "course_college": "Columbia University",
+        "course_university": "Columbia University",
+        "course_price": 1500
+      },
+      {
+        "course_id": 3,
+        "course_name": "Machine Learning",
+        "course_state": "Texas",
+        "course_college": "University of Texas at Austin",
+        "course_university": "University of Texas at Austin",
+        "course_price": 2000
+      }
+    ]
+  }
+  
