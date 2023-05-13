@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Education India</title>
+   </head>
+   <body>
+      <h1>Welcome to Education India!</h1>
+      <form action="{{ url_for('results') }}" method="get">
+         <label for="name">Name:</label>
+         <select name="name" id="name">
+            <option value="">Select a course</option>
+            {% for course in courses %}
+            <option value="{{ course['name'] }}">{{ course['name'] }}</option>
+            {% endfor %}
+         </select>
+         <br><br>
+         <label for="branch">Branch:</label>
+         <select name="branch" id="branch">
+            <option value="">Select a branch</option>
+            {% for course in courses %}
+            <option value="{{ course['branch'] }}">{{ course['branch'] }}</option>
+            {% endfor %}
+         </select>
+         <br><br>
+         <label for="state">State:</label>
+         <select name="state" id="state">
+            <option value="">Select a state</option>
+            {% for course in courses %}
+            <option value="{{ course['state'] }}">{{ course['state'] }}</option>
+            {% endfor %}
+         </select>
+         <br><br>
+         <input type="submit" value="Submit">
+      </form>
+      <br><br>
+      <table>
+         <thead>
+            <tr>
+               <th>Course Name</th>
+               <th>Branch</th>
+               <th>State</th>
+               <th>College</th>
+               <th>University</th>
+               <th>Price</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for course in courses %}
+            <tr>
+               <td>{{ course['name'] }}</td>
+               <td>{{ course['branch'] }}</td>
+               <td>{{ course['state'] }}</td>
+               <td>{{ course['college'] }}</td>
+               <td>{{ course['university'] }}</td>
+               <td>{{ course['price'] }}</td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </body>
+</html>
