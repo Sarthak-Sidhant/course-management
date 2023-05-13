@@ -1,3 +1,0 @@
-Computer Science,BE,Maharashtra,ABC College,University of Mumbai,10000
-Electrical Engineering,BTech,Maharashtra,XYZ College,University of Mumbai,12000
-Mechanical Engineering,BTech,Delhi,DEF College,University of Delhi,15000
